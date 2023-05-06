@@ -10,3 +10,9 @@
   height: 100%;
 
 }
+
+.central-portada {
+  @extend %central;
+
+  color: $color-secundario;
+}

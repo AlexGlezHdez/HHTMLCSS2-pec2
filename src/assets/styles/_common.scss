@@ -15,30 +15,29 @@ grid-template-areas:
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
+
+  color: $color-primario;
 }
 
 body {
   @extend %body;
 }
 
-%enlace {
-  color: $color-primario;
+@mixin enlace($color: $color-primario, $color-hover: $color-contraste) {
+  color: $color;
 
   &:hover {
-    color: $color-contraste;
+    color: $color-hover;
   }
 }
 
 
 .enlace {
-  @extend %enlace;
-
+  @include enlace;
 }
 
 .enlace-portada {
-  @extend %enlace;
-
-  color: $color-secundario;
+  @include enlace($color: $color-secundario);
 }
 
 .logo {
