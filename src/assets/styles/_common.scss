@@ -1,0 +1,46 @@
+
+/* Grid */
+%body {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, $mqMaxContentWidth) 1fr;
+  grid-template-rows: minmax( 100px, auto) 1fr auto;
+grid-template-areas:
+". h ."
+". m ."
+". f .";
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body {
+  @extend %body;
+}
+
+%enlace {
+  color: $color-primario;
+
+  &:hover {
+    color: $color-contraste;
+  }
+}
+
+
+.enlace {
+  @extend %enlace;
+
+}
+
+.enlace-portada {
+  @extend %enlace;
+
+  color: $color-secundario;
+}
+
+.logo {
+  height: 50px;
+}

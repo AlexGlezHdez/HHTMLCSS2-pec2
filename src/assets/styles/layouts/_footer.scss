@@ -1,0 +1,23 @@
+
+
+%pie {
+  grid-area: f;
+  background-color: $color-fondo;
+}
+
+.pie {
+  @extend %pie;
+
+  display: grid;
+  grid-template-columns: 1fr repeat(4, auto) 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  column-gap: 2em;
+
+  padding: 1em;
+}
+
+.contacto {
+  grid-column: 1/-1;
+  grid-row: 1;
+}

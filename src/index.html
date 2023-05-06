@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/styles/main.scss"
+    <include
+        src="./views/head.html"
+        locals='{"titulo": "Club Checkmate - Índice"}'
+    ></include>
+    <body class="cuerpo-portada">
+        <img
+            src="/src/assets/images/portada.jpg"
+            alt="Imagen de portada"
+            class="fondo-portada"
         />
-        <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
-    </head>
-    <body>
+        <include
+            src="./views/header.html"
+            locals='{"portada": "-portada"}'
+        ></include>
+
+        <main class="central">
+            <h2>Club de ajedrez</h2>
+            <h1>Checkmate</h1>
+            <p>
+                Si te gusta el ajedrez, buscas con quien jugar o noticas sobre
+                tu juego favorito ¡este es tu club!
+            </p>
+        </main>
+
         <!--
     <div class="uoc-container">
       <picture>

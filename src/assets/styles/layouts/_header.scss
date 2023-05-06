@@ -1,0 +1,28 @@
+%cabecera {
+  grid-area: h;
+
+  display: grid;
+
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  grid-gap: 3em;
+
+  align-items: center;
+
+  padding: 1em;
+}
+
+.cabecera {
+  @extend %cabecera;
+
+}
+
+.cabecera-portada {
+  @extend %cabecera;
+
+  color: $color-secundario;
+}
+
