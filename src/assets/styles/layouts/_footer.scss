@@ -10,14 +10,54 @@
 
   display: grid;
   grid-template-columns: 1fr repeat(4, auto) 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
 
-  column-gap: 2em;
+  grid-template-areas:
+  "logo e1 e1 e2 e2 redes"
+  "logo e3 e3 e4 e4 redes";
+
+
+  column-gap: 1em;
+  row-gap: 0.5em;
+
+  align-items: center;
+  justify-items: start;
 
   padding: 1em;
 }
 
+.gf-logo {
+  grid-area: logo;
+}
+
+.gf-e1 {
+  grid-area: e1;
+}
+.gf-e2 {
+  grid-area: e2;
+}
+.gf-e3 {
+  grid-area: e3;
+}
+.gf-e4 {
+  grid-area: e4;
+}
+
+.gf-redes {
+  grid-area: redes;
+}
+
+.redes {
+  justify-self: end;
+}
+
+.enlace-pie {
+  @include enlace($color: $color-terciario);
+
+  font-weight: bold;
+}
+
 .contacto {
-  grid-column: 1/-1;
-  grid-row: 1;
+  grid-column: 2/-1;
+  grid-row: 3;
 }

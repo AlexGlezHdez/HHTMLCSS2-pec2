@@ -36,9 +36,7 @@ body {
   @include enlace;
 }
 
-.enlace-portada {
-  @include enlace($color: $color-secundario);
-}
+
 
 .logo {
   height: 50px;
