@@ -9,7 +9,7 @@
 }
 
 .titulo-miembros {
-  @extend %titulo;
+  @include titulo;
 
   text-align: center;
 }
@@ -20,4 +20,14 @@
   justify-content: space-evenly;
   gap: 2em;
 
+}
+
+.contenedor-contacto {
+padding:1.5em;
+max-width: 40em;
+margin: 0 auto;
+}
+
+.titulo-contacto {
+  @include titulo($size: 1.2em);
 }

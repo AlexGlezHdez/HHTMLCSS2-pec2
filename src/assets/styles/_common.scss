@@ -36,11 +36,10 @@ body {
 }
 
 
-%titulo {
+@mixin titulo($size: 2em) {
   color: $color-terciario;
-  font-size: 2em;
-  margin-top: 1em;
-  padding-bottom: 1.5em;
+  font-size: $size;
+  padding-bottom: 1em;
   font-weight: bold;
 }
 

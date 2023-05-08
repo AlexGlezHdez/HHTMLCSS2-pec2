@@ -82,7 +82,12 @@
   font-weight: bold;
 }
 
-.contacto {
+.pie-contacto {
   grid-column: 1/-1;
-  //grid-row: 3;
+  justify-self: center;
+}
+
+.pie-info-legal {
+  grid-column: 1/-1;
+  justify-self: center;
 }
