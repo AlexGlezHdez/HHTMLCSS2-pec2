@@ -15,4 +15,23 @@
   @extend %central;
 
   color: $color-secundario;
+  padding: 2em;
 }
+
+@mixin sombra ($color: #fff) {
+  text-shadow: -1px -1px 2px $color, 1px -1px 2px $color, -1px 1px 2px $color, 1px 1px 2px $color, 0 0 10px $color;
+}
+
+.portada-titulo {
+  @include sombra();
+  font-weight: 600;
+}
+
+.portada-texto {
+  @include sombra($color-terciario);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $color-secundario;
+  max-width: $mqMinWidth;
+}
+

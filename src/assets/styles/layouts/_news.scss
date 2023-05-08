@@ -1,0 +1,22 @@
+.contenedor-articulo {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.referencia-articulo {
+margin-top: 0;
+margin-bottom: .5rem;
+font-weight: 500;
+line-height: 1.2;
+font-size: 0.875em;
+}
+
+.figura-centrada {
+  align-self: center;
+}
+
+.enlace-articulo {
+  @include enlace($color-terciario);
+}
