@@ -45,3 +45,25 @@
 .enlace-cabecera-portada {
   font-weight: bold;
 }
+
+
+
+// Bootstrap
+
+.cabecera-bs {
+  grid-area: h;
+
+  --#{$prefix}navbar-color: #{$color-terciario};
+  --#{$prefix}navbar-hover-color: #{$color-contraste};
+  --#{$prefix}navbar-brand-color: #{$color-terciario};
+  --#{$prefix}navbar-brand-hover-color: #{$color-contraste};
+  --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
+  --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
+
+}
+
+.puturru {
+  $navbar-dark-hover-color: red;
+  $navbar-dark-toggler-border-color: red;
+  --bs-navbar-toggler-border-color: red;
+}

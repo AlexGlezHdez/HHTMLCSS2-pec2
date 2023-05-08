@@ -1,3 +1,5 @@
+<!--
+
 <header class="cabecera{{  portada }}">
     <a href="index.html" class="enlace-cabecera{{ portada }}"
         ><img src="/src/assets/images/logo.png" alt="Logo" class="logo" /> Club
@@ -8,4 +10,46 @@
     <a href="curiosidades.html" class="enlace-cabecera{{ portada }}"
         >Curiosidades</a
     >
+</header>
+
+    -->
+
+<header
+    class="cabecera-bs{{ portada }} navbar navbar-expand-sm"
+    data-bs-theme="dark"
+>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img
+                src="/src/assets/images/logo.png"
+                alt="Logo"
+                class="logo d-inline-block align-middle"
+            />
+            <div class="d-inline-block align-middle">
+                <span class="fs-6">Club de ajedrez</span>
+                <div>CHECKMATE</div>
+            </div>
+        </a>
+        <button
+            class="navbar-toggler puturru"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+        >
+            <div class="navbar-nav">
+                <a class="nav-link" href="miembros.html">Miembros</a>
+                <a class="nav-link" href="noticias.html">Blog</a>
+                <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+            </div>
+        </div>
+    </div>
 </header>
