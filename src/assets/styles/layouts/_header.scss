@@ -31,12 +31,17 @@
   color: $color-secundario;
 }
 
-.enlace-cabecera,
+.enlace-cabecera
+{
+  @include enlace;
+}
+
 .enlace-cabecera-portada
 {
   @include enlace($color: $color-secundario);
 }
 
+.enlace-cabecera,
 .enlace-cabecera-portada {
   font-weight: bold;
 }

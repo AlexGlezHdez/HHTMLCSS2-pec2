@@ -3,7 +3,7 @@
 %body {
   display: grid;
   grid-template-columns: 1fr minmax(auto, $mqMaxContentWidth) 1fr;
-  grid-template-rows: minmax( 100px, auto) 1fr auto;
+  grid-template-rows: auto 1fr auto;
 grid-template-areas:
 ". h ."
 ". m ."
@@ -31,12 +31,18 @@ body {
   }
 }
 
-
 .enlace {
   @include enlace;
 }
 
 
+%titulo {
+  color: $color-terciario;
+  font-size: 2em;
+  margin-top: 1em;
+  padding-bottom: 1.5em;
+  font-weight: bold;
+}
 
 .logo {
   height: 50px;
