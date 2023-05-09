@@ -1,65 +1,36 @@
-%cabecera {
+// Modificacion de estilos a Bootstrap
+
+@mixin cabecera-bs($color: $color-terciario, $color-hover: $color-contraste) {
   grid-area: h;
 
-  display: grid;
+  --#{$prefix}navbar-color: #{$color};
+  --#{$prefix}navbar-hover-color: #{$color-hover};
+  --#{$prefix}navbar-brand-color: var(--#{$prefix}navbar-color);
+  --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}navbar-hover-color);
+  --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
+  --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
+  --#{$prefix}navbar-toggler-border-color: var(--#{$prefix}navbar-color);
 
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-auto-columns: auto;
-  grid-column-gap: 3em;
-  grid-row-gap: 0.5em;
-
-  align-items: center;
-  justify-items: center;
-  padding: 1em;
-
-  @media (min-width: $mqMinWidth) {
-    grid-auto-flow: column;
-    justify-items:start;
-  }
-}
-
-.cabecera {
-  @extend %cabecera;
+  --#{$prefix}navbar-toggler-icon-bg: #{escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"))};
 
 }
-
-.cabecera-portada {
-  @extend %cabecera;
-
-  color: $color-secundario;
-}
-
-.enlace-cabecera
-{
-  @include enlace;
-}
-
-.enlace-cabecera-portada
-{
-  @include enlace($color: $color-secundario);
-}
-
-.enlace-cabecera,
-.enlace-cabecera-portada {
-  font-weight: bold;
-}
-
-
-
-// Bootstrap
 
 .cabecera-bs {
+  @include cabecera-bs();
+}
+.cabecera-bs-portada {
+  @include cabecera-bs($color: $color-secundario);
+}
+
+.OLD-cabecera-bs {
   grid-area: h;
 
   --#{$prefix}navbar-color: #{$color-terciario};
   --#{$prefix}navbar-hover-color: #{$color-contraste};
-  --#{$prefix}navbar-brand-color: #{$color-terciario};
-  --#{$prefix}navbar-brand-hover-color: #{$color-contraste};
+  --#{$prefix}navbar-brand-color: var(--#{$prefix}navbar-color);
+  --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}navbar-hover-color);
   --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
   --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
-
 }
 
 .puturru {
