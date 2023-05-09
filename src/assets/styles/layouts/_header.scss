@@ -22,19 +22,3 @@
   @include cabecera-bs($color: $color-secundario);
 }
 
-.OLD-cabecera-bs {
-  grid-area: h;
-
-  --#{$prefix}navbar-color: #{$color-terciario};
-  --#{$prefix}navbar-hover-color: #{$color-contraste};
-  --#{$prefix}navbar-brand-color: var(--#{$prefix}navbar-color);
-  --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}navbar-hover-color);
-  --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
-  --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
-}
-
-.puturru {
-  $navbar-dark-hover-color: red;
-  $navbar-dark-toggler-border-color: red;
-  --bs-navbar-toggler-border-color: red;
-}

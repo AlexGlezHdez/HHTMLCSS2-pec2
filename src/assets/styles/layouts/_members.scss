@@ -31,3 +31,9 @@ margin: 0 auto;
 .titulo-contacto {
   @include titulo($size: 1.2em);
 }
+
+.enlace-contacto {
+  @include enlace($color: $color-terciario);
+
+  font-style: italic;
+}
