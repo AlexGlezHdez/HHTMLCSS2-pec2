@@ -1,16 +1,16 @@
 .contenedor-articulo {
-  padding: 1em;
   display: flex;
   flex-direction: column;
+  padding: 1em;
 
 }
 
 .referencia-articulo {
-margin-top: 0;
-margin-bottom: .5rem;
-font-weight: 500;
-line-height: 1.2;
-font-size: 0.875em;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 0.875em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .figura-centrada {

@@ -1,5 +1,4 @@
 // Modificacion de estilos a Bootstrap
-
 @mixin cabecera-bs($color: $color-terciario, $color-hover: $color-contraste) {
   grid-area: h;
 
@@ -10,9 +9,7 @@
   --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
   --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
   --#{$prefix}navbar-toggler-border-color: var(--#{$prefix}navbar-color);
-
   --#{$prefix}navbar-toggler-icon-bg: #{escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"))};
-
 }
 
 .cabecera-bs {
@@ -20,6 +17,7 @@
 
   border-bottom: 1px solid $color-terciario;
 }
+
 .cabecera-bs-portada {
   @include cabecera-bs($color: $color-secundario);
 }
