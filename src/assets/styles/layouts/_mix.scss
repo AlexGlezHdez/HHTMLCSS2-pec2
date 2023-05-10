@@ -1,8 +1,16 @@
 .central-mix {
   @extend %central;
+
+    padding: 1em;
 }
 
 .btn-primary {
-  @include button-variant($color-terciario, darken($color-terciario, 7.5%), darken($color-terciario, 10%), lighten($color-terciario,5%), lighten($color-terciario, 10%), darken($color-terciario,30%));
+  @include button-variant(
+      $color-terciario,
+      darken($color-terciario, 7.5%),
+      $color-secundario,
+      lighten($color-terciario,5%),
+      lighten($color-terciario, 10%),
+      $color-secundario);
   color: $color-secundario;
 }

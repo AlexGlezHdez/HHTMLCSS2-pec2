@@ -1,5 +1,3 @@
-@import "card";
-
 .central-miembros {
   @extend %central;
   display: flex;
@@ -19,6 +17,16 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2em;
+}
+
+.tarjeta-elo-titulo {
+  font-style: italic;
+  margin-right: 5px;
+  color: $color-terciario;
+}
+
+.tarjeta-bs {
+  width: 275px;
 
 }
 

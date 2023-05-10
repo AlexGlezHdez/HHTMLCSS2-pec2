@@ -17,6 +17,8 @@
 
 .cabecera-bs {
   @include cabecera-bs();
+
+  border-bottom: 1px solid $color-terciario;
 }
 .cabecera-bs-portada {
   @include cabecera-bs($color: $color-secundario);
