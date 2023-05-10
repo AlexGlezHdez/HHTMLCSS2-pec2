@@ -1,25 +1,42 @@
 /* Grid */
 %body {
-  display: grid;
-  grid-template: auto 1fr auto / 1fr minmax(auto, $mqMaxContentWidth) 1fr;
-  grid-template-areas:
-    ". h ."
-    ". m ."
-    ". f .";
-
   width: 100vw;
   height: 100vh;
-
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-
   color: $color-primario;
 }
 
-body {
-  @extend %body;
+@supports (display: grid) {
+  body {
+    @extend %body;
+
+    display: grid;
+    grid-template: auto 1fr auto / 1fr minmax(auto, $mqMaxContentWidth) 1fr;
+    grid-template-areas:
+      ". h ."
+      ". m ."
+      ". f .";
+  }
 }
+@supports not (display: grid) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+    max-width: $mqMaxContentWidth;
+    margin: 0 auto;
+  }
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 
 @mixin enlace($color: $color-primario, $color-hover: $color-contraste) {
   color: $color;
